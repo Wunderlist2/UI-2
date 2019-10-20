@@ -162,7 +162,29 @@ table {
   color: #544b02;
   text-shadow: 1px 0px 20px #FFFFFF;
 }
-.container .content .main_content {
-  border: 1px solid blue;
+.container .main_content {
   width: 100%;
+  display: grid;
+  grid-template-rows: 30% 30% 30%;
+  justify-items: start;
+}
+.container .main_content .content_2 {
+  padding-top: 15%;
+  padding-left: 10%;
+  font-size: 20px;
+}
+.container .main_content p {
+  font-weight: bold;
+  width: 50vw;
+  margin-left: 25%;
+  padding: 2%;
+}
+.container .footer {
+  background: black;
+  width: 98.8vw;
+  height: 3vh;
+  text-align: center;
+  padding-top: 1%;
+  font-size: 10px;
+  color: #FFFFFF;
 }
