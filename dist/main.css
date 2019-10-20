@@ -143,14 +143,14 @@ table {
 }
 .container .content h1 {
   font-size: 20px;
-  color: black;
+  color: #000000;
   text-shadow: 1px 1px;
   margin-left: 40%;
   padding: 2%;
 }
 .container .content nav {
   font-size: 20px;
-  text-shadow: 1px 1px black;
+  text-shadow: 1px 1px #000000;
   margin: 0.15%;
 }
 .container .content a {
@@ -160,7 +160,7 @@ table {
 }
 .container .content a:hover {
   color: #544b02;
-  text-shadow: 1px 0px 20px white;
+  text-shadow: 1px 0px 20px #FFFFFF;
 }
 .container .content .main_content {
   border: 1px solid blue;

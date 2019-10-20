@@ -74,7 +74,7 @@ table {
         
         h1 {
             font-size: @font-size;
-            color: black;
+            color: @text_color;
             text-shadow: 1px 1px;
             margin-left: 40%;
             padding: 2%;
@@ -82,7 +82,7 @@ table {
 
         nav {
             font-size: @font-size;
-            text-shadow: 1px 1px black;
+            text-shadow: 1px 1px @text_color;
             margin: .15%;
         }
 
@@ -92,7 +92,7 @@ table {
             color:black;
             &:hover {
                 color: darken(@link_color_hover, 50%);
-                text-shadow: 1px 0px 20px white;
+                text-shadow: 1px 0px 20px @shadow_color;
 
             }
         }
