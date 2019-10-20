@@ -173,6 +173,20 @@ table {
   padding-left: 10%;
   font-size: 20px;
 }
+.container .main_content .content_2 h2 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-left: 26%;
+  text-align: center;
+  width: 100%;
+}
+.container .main_content .content_2 h3 {
+  font-size: 40px;
+  margin-left: 26%;
+  width: 100%;
+  font-weight: 100;
+  text-align: center;
+}
 .container .main_content p {
   font-weight: bold;
   width: 50vw;
