@@ -68,11 +68,18 @@ table {
         //border: 1px solid purple;
         justify-content: space-between;
         align-items: center;
-        
+
+        .title {
+            &:hover {
+                color: @link_color_hover;
+                text-shadow: @text_shadow;
+            }
+        }
         .active {
             color: @shadow_color;
             text-shadow: @text_shadow;
         }
+
         h1 {
             font-size: @font-size;
             color: @text_color;
@@ -95,9 +102,7 @@ table {
                 color: @shadow_color;
                 text-shadow: @text_shadow;
             }
-           
         }
-        
     }
     .grid_container {
         display: grid;
@@ -194,15 +199,18 @@ table {
             }
         }
     }
+
 .footer {
+    position: sticky;
+    bottom: 0;
     background: @text_color;
-    width: 98.80vw;
+    width: 99.1vw;
     height: 3vh;
     text-align: center;
     padding-top: 1%;
     font-size: 10px;
     color: @shadow_color;
-    float: bottom;
+    
 }
 }   
 
