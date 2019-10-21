@@ -195,8 +195,8 @@ table {
 .container .grid_container .container_2 p {
   line-height: 1.25;
 }
-.container .grid_container .container_2 :last-child {
-  margin-bottom: 10%;
+.container .grid_container .container_2 p:last-child {
+  margin-bottom: 15%;
   border: 1px solid red;
 }
 .container .main_content {
