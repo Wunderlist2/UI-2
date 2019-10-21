@@ -251,7 +251,7 @@ table {
   text-decoration: none;
   color: #FFFFFF;
 }
-.container .footer {
+.footer {
   position: sticky;
   bottom: 0;
   background: #000000;
