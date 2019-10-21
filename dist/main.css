@@ -141,6 +141,10 @@ table {
   justify-content: space-between;
   align-items: center;
 }
+.container .content .active {
+  color: #FFFFFF;
+  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+}
 .container .content h1 {
   font-size: 20px;
   color: #000000;
@@ -211,7 +215,7 @@ table {
   text-decoration: none;
   color: #FFFFFF;
 }
-.container .footer {
+.footer {
   background: black;
   width: 98.8vw;
   height: 3vh;

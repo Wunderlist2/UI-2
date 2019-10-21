@@ -69,7 +69,10 @@ table {
         justify-content: space-between;
         align-items: center;
         
-        
+        .active {
+            color: @shadow_color;
+            text-shadow: @text_shadow;
+        }
         h1 {
             font-size: @font-size;
             color: @text_color;
@@ -90,8 +93,7 @@ table {
             color: @text_color;
             &:hover {
                 color: @shadow_color;
-                text-shadow: -1px 0 @text_color, 0 1px @text_color, 1px 0 @text_color, 0 -1px @text_color;
-                
+                text-shadow: @text_shadow;
             }
            
         }
@@ -145,7 +147,7 @@ table {
                 &:hover {
                     background-color: #606060;
                     color: @shadow_color;
-                    text-shadow: -1px 0 @text_color, 0 1px @text_color, 1px 0 @text_color, 0 -1px @text_color;
+                    text-shadow: @text_shadow;
                 }
 
                 a {
@@ -153,8 +155,10 @@ table {
                     color: @shadow_color;
                 }
             }
+    
         }
     }
+}
 
     .footer {
         background: black;
@@ -165,4 +169,3 @@ table {
         font-size: 10px;
         color: @shadow_color;
     }  
-}
