@@ -142,7 +142,7 @@ table {
   align-items: center;
 }
 .container .content .title:hover {
-  color: #FCE959;
+  color: #E30000;
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 .container .content .active {
@@ -165,10 +165,11 @@ table {
   margin-left: 15%;
   text-decoration: none;
   color: #000000;
+  transition: 0.5s;
 }
 .container .content a:hover {
   color: #FFFFFF;
-  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+  text-shadow: -1px 0 #004BC4, 0 1px #004BC4, 1px 0 #004BC4, 0 -1px #004BC4;
 }
 .container .grid_container {
   display: grid;
@@ -192,6 +193,17 @@ table {
 }
 .container .grid_container .container_2 p {
   line-height: 1.5;
+}
+.container .grid_container .container_2 .button {
+  width: 20%;
+  height: 3vh;
+  background: #004BC4;
+  color: #FFFFFF;
+  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+  transition: 0.5s;
+}
+.container .grid_container .container_2 .button:hover {
+  opacity: 0.6;
 }
 .container .main_content {
   width: 100%;
@@ -255,7 +267,7 @@ table {
   transition: 0.5s;
 }
 .container .main_content p button:hover {
-  background-color: #606060;
+  background-color: #004BC4;
   color: #FFFFFF;
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }

@@ -71,7 +71,7 @@ table {
 
         .title {
             &:hover {
-                color: @link_color_hover;
+                color: @red_color;
                 text-shadow: @text_shadow;
             }
         }
@@ -98,9 +98,10 @@ table {
             margin-left: 15%;
             text-decoration: none;
             color: @text_color;
+            transition: 0.5s;
             &:hover {
                 color: @shadow_color;
-                text-shadow: @text_shadow;
+                text-shadow: @text_shadow_2;
             }
         }
     }
@@ -130,10 +131,18 @@ table {
         p {
             line-height: 1.5;
         }
-        // p:last-child {
-        //     margin-bottom: 20%;
-        //     border: 1px solid red;
-        // }
+        
+        .button {
+            width: 20%;
+            height: 3vh;
+            background: @blue_color;
+            color: @shadow_color;
+            text-shadow: @text_shadow;
+            transition: 0.5s;
+            &:hover {
+                opacity: 0.6;
+            }
+        }
         
     }
     }
@@ -204,7 +213,7 @@ table {
                 border-radius: 10px;
                 transition: 0.5s;
                 &:hover {
-                    background-color: #606060;
+                    background-color: #004BC4;
                     color: @shadow_color;
                     text-shadow: @text_shadow;
                 }
