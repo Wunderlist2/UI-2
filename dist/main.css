@@ -172,16 +172,13 @@ table {
 }
 .container .grid_container {
   display: grid;
-  grid-template-columns: 30% 30% 30%;
+  grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 35vh;
   text-align: center;
-  line-height: 1.25;
-  float: left;
   justify-content: space-evenly;
 }
 .container .grid_container .container_2 {
   padding: 2%;
-  border: 1px solid blue;
 }
 .container .grid_container .container_2 img {
   border: 2px solid #000000;
@@ -194,11 +191,7 @@ table {
   font-size: 20px;
 }
 .container .grid_container .container_2 p {
-  line-height: 1.25;
-}
-.container .grid_container .container_2 p:last-child {
-  margin-bottom: 20%;
-  border: 1px solid red;
+  line-height: 1.5;
 }
 .container .main_content {
   width: 100%;
