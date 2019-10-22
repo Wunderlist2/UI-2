@@ -51,6 +51,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+// Media queries for: 
+//   max-width: 1000(desktop) - built
+//   max-width:  800(tablet)
+//   max-width:  500(mobile)
 
 // Custom code begins here -KG
 // Main page container
@@ -72,12 +76,12 @@ table {
         .title {
             &:hover {
                 color: @red_color;
-                text-shadow: @text_shadow;
+                .text_shadow();
             }
         }
         .active {
             color: @shadow_color;
-            text-shadow: @text_shadow;
+            .text_shadow();
         }
 
         h1 {
@@ -101,7 +105,7 @@ table {
             transition: 0.5s;
             &:hover {
                 color: @shadow_color;
-                text-shadow: @text_shadow_2;
+                .text_shadow_2();
             }
         }
     }
@@ -137,7 +141,7 @@ table {
             height: 3vh;
             background: @text_color;
             color: @shadow_color;
-            text-shadow: @text_shadow;
+            .text_shadow();
             transition: 0.5s;
             &:hover {
                 background: @blue_color;
@@ -215,7 +219,7 @@ table {
                 &:hover {
                     background-color: #004BC4;
                     color: @shadow_color;
-                    text-shadow: @text_shadow;
+                    .text_shadow();
                 }
 
                 a {
