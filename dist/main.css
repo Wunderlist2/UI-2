@@ -142,11 +142,11 @@ table {
 }
 .container .content {
   display: grid;
-  border: 1px solid red;
-  grid-template-columns: 85% 10% 10% 10%;
+  grid-template-columns: 85% 12% 12% 12%;
   grid-template-rows: 50% auto;
   justify-content: right;
   align-items: center;
+  padding-top: 1%;
 }
 @media (max-width: 800px) {
   .container .content {
@@ -154,6 +154,7 @@ table {
   }
 }
 .container .content .title {
+  margin-left: 15%;
   justify-content: left;
 }
 .container .content .title:hover {
@@ -177,7 +178,6 @@ table {
 }
 .container .content a {
   font-weight: bold;
-  margin-left: 15%;
   font-size: 20px;
   text-decoration: none;
   color: #000000;
