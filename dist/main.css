@@ -150,14 +150,14 @@ table {
 }
 @media (max-width: 500px) {
   .container .content {
-    grid-template-columns: 40% 20% 18% 18%;
+    grid-template-columns: 50% 20% 18% 18%;
     align-items: center;
     justify-content: space-evenly;
   }
 }
 .container .content .title {
   margin-left: 15%;
-  font-size: 20px;
+  font-size: 100%;
   justify-content: left;
 }
 .container .content .title:hover {
@@ -169,25 +169,23 @@ table {
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 .container .content h1 {
-  font-size: 20px;
+  font-size: 100%;
   color: #000000;
-  text-shadow: 1px 1px;
   margin-left: 40%;
   padding: 2%;
 }
 @media (max-width: 500px) {
   .container .content h1 {
     margin-left: 2%;
-    padding-left: 1%;
   }
 }
 .container .content nav {
-  font-size: 20px;
+  font-size: 100%;
   margin: 0.15%;
 }
 .container .content a {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 100%;
   text-decoration: none;
   color: #000000;
   transition: 0.5s;
@@ -211,7 +209,13 @@ table {
   }
 }
 .container .grid_container .container_2 {
-  padding: 2%;
+  grid-row-gap: 2%;
+}
+@media (max-width: 500px) {
+  .container .grid_container .container_2 {
+    padding-bottom: 5%;
+    align-items: center;
+  }
 }
 .container .grid_container .container_2 img {
   border: 2px solid #000000;
@@ -221,15 +225,20 @@ table {
   color: #000000;
 }
 .container .grid_container .container_2 h2 {
-  font-size: 20px;
+  font-size: 100%;
 }
 .container .grid_container .container_2 p {
   line-height: 1.5;
+  align-items: end;
+}
+.container .grid_container .container_2 p img {
+  width: 30px;
+  border: 0px;
 }
 .container .grid_container .container_2 .button {
-  font-size: 80%;
+  font-size: 100%;
   width: 20%;
-  height: 3vh;
+  height: 5vh;
   background: #000000;
   color: #FFFFFF;
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
@@ -253,13 +262,32 @@ table {
 }
 .container .main_content .content_3 {
   padding-left: 10%;
-  font-size: 20px;
+  font-size: 100%;
   text-align: justify;
 }
 @media (max-width: 500px) {
   .container .main_content .content_3 {
     padding-left: 2%;
   }
+}
+.container .main_content .content_3 button {
+  font-size: 100%;
+  width: 20%;
+  height: 5vh;
+  background: #000000;
+  color: #FFFFFF;
+  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+  transition: 0.5s;
+}
+@media (max-width: 500px) {
+  .container .main_content .content_3 button {
+    width: 80%;
+    margin-top: 20%;
+  }
+}
+.container .main_content .content_3 button:hover {
+  background: #004BC4;
+  border: 3px solid #000000;
 }
 .container .main_content .content_3 h2 {
   font-size: 50px;
@@ -277,10 +305,18 @@ table {
 .container .main_content .content_3 p {
   text-align: center;
 }
+@media (max-width: 500px) {
+  .container .main_content .content_3 p a img {
+    margin-top: 5%;
+    width: 60px;
+    background-color: #FCE959;
+    border: 2px solid #000000;
+  }
+}
 .container .main_content .content_2 {
   padding-top: 10%;
   padding-left: 10%;
-  font-size: 20px;
+  font-size: 100%;
 }
 @media (max-width: 500px) {
   .container .main_content .content_2 .title_2 {
@@ -319,9 +355,6 @@ table {
   border-radius: 4px;
   padding: 5px;
   width: 15%;
-}
-.container .main_content .content_2 button {
-  border: 2px solid black;
 }
 @media (max-width: 500px) {
   .container .main_content .content_2 p .content_3 {
