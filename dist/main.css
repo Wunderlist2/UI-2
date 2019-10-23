@@ -142,11 +142,19 @@ table {
 }
 .container .content {
   display: grid;
-  grid-template-columns: 30% 25%;
-  grid-template-rows: 10% auto;
-  grid-gap: 10%;
-  justify-content: space-evenly;
+  border: 1px solid red;
+  grid-template-columns: 85% 10% 10% 10%;
+  grid-template-rows: 50% auto;
+  justify-content: right;
   align-items: center;
+}
+@media (max-width: 800px) {
+  .container .content {
+    border: 1px solid red;
+  }
+}
+.container .content .title {
+  justify-content: left;
 }
 .container .content .title:hover {
   color: #E30000;
@@ -166,10 +174,11 @@ table {
 .container .content nav {
   font-size: 20px;
   margin: 0.15%;
-  font-weight: bold;
 }
 .container .content a {
+  font-weight: bold;
   margin-left: 15%;
+  font-size: 20px;
   text-decoration: none;
   color: #000000;
   transition: 0.5s;
