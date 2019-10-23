@@ -157,7 +157,7 @@ table {
 }
 .container .content .title {
   margin-left: 15%;
-  font-size: 20px;
+  font-size: 100%;
   justify-content: left;
 }
 .container .content .title:hover {
@@ -169,7 +169,7 @@ table {
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 .container .content h1 {
-  font-size: 20px;
+  font-size: 100%;
   color: #000000;
   text-shadow: 1px 1px;
   margin-left: 40%;
@@ -182,12 +182,12 @@ table {
   }
 }
 .container .content nav {
-  font-size: 20px;
+  font-size: 100%;
   margin: 0.15%;
 }
 .container .content a {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 100%;
   text-decoration: none;
   color: #000000;
   transition: 0.5s;
@@ -211,7 +211,7 @@ table {
   }
 }
 .container .grid_container .container_2 {
-  padding: 2%;
+  grid-row-gap: 2%;
 }
 .container .grid_container .container_2 img {
   border: 2px solid #000000;
@@ -221,10 +221,15 @@ table {
   color: #000000;
 }
 .container .grid_container .container_2 h2 {
-  font-size: 20px;
+  font-size: 100%;
 }
 .container .grid_container .container_2 p {
   line-height: 1.5;
+  align-items: end;
+}
+.container .grid_container .container_2 p img {
+  width: 30px;
+  border: 0px;
 }
 .container .grid_container .container_2 .button {
   font-size: 80%;
@@ -253,7 +258,7 @@ table {
 }
 .container .main_content .content_3 {
   padding-left: 10%;
-  font-size: 20px;
+  font-size: 100%;
   text-align: justify;
 }
 @media (max-width: 500px) {
@@ -280,7 +285,7 @@ table {
 .container .main_content .content_2 {
   padding-top: 10%;
   padding-left: 10%;
-  font-size: 20px;
+  font-size: 100%;
 }
 @media (max-width: 500px) {
   .container .main_content .content_2 .title_2 {
