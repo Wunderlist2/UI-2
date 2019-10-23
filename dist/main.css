@@ -150,7 +150,7 @@ table {
 }
 @media (max-width: 500px) {
   .container .content {
-    grid-template-columns: 40% 20% 18% 18%;
+    grid-template-columns: 50% 20% 18% 18%;
     align-items: center;
     justify-content: space-evenly;
   }
@@ -171,14 +171,12 @@ table {
 .container .content h1 {
   font-size: 100%;
   color: #000000;
-  text-shadow: 1px 1px;
   margin-left: 40%;
   padding: 2%;
 }
 @media (max-width: 500px) {
   .container .content h1 {
     margin-left: 2%;
-    padding-left: 1%;
   }
 }
 .container .content nav {
@@ -212,6 +210,12 @@ table {
 }
 .container .grid_container .container_2 {
   grid-row-gap: 2%;
+}
+@media (max-width: 500px) {
+  .container .grid_container .container_2 {
+    padding-bottom: 5%;
+    align-items: center;
+  }
 }
 .container .grid_container .container_2 img {
   border: 2px solid #000000;
@@ -277,13 +281,13 @@ table {
 }
 @media (max-width: 500px) {
   .container .main_content .content_3 button {
-    width: 60px;
-    height: 30px;
+    width: 80%;
+    margin-top: 20%;
   }
 }
 .container .main_content .content_3 button:hover {
   background: #004BC4;
-  border: 3px solid black;
+  border: 3px solid #000000;
 }
 .container .main_content .content_3 h2 {
   font-size: 50px;
@@ -300,6 +304,14 @@ table {
 }
 .container .main_content .content_3 p {
   text-align: center;
+}
+@media (max-width: 500px) {
+  .container .main_content .content_3 p a img {
+    margin-top: 5%;
+    width: 60px;
+    background-color: #FCE959;
+    border: 2px solid #000000;
+  }
 }
 .container .main_content .content_2 {
   padding-top: 10%;

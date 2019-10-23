@@ -18,10 +18,9 @@
 
     .content{
         @media @mobile {
-            grid-template-columns: 40% 20% 18% 18%;
+            grid-template-columns: 50% 20% 18% 18%;
             align-items: center;
             justify-content: space-evenly;
-
         }
 
         display: grid;
@@ -48,11 +47,9 @@
         h1 {
             @media @mobile {
                 margin-left: 2%;
-                padding-left: 1%;
             }
             font-size: @font-size;
             color: @text_color;
-            text-shadow: 1px 1px;
             margin-left: 40%;
             padding: 2%;
         }
@@ -87,6 +84,10 @@
         justify-content: space-evenly;
         
     .container_2 {
+        @media @mobile {
+            padding-bottom: 5%;
+            align-items: center;
+        }
         grid-row-gap: 2%;
 
         img {
@@ -145,15 +146,15 @@
             
             button {
                 @media @mobile {
-                    width: 60px;
-                    height: 30px;
+                    width: 80%;
+                    margin-top: 20%;
                 }
                 .btn(@text_color, @shadow_color);
                 .text_shadow();
                 transition: 0.5s;
                 &:hover {
                     background: @blue_color;
-                    border: 3px solid black;
+                    border: 3px solid @text_color;
                 }
             }
 
@@ -171,6 +172,17 @@
 
             p {
                 text-align: center;
+
+                a {
+                    @media @mobile {
+                        img {
+                            margin-top: 5%;
+                            width: 60px;
+                            background-color: @link_color_hover;
+                            border: 2px solid @text_color;
+                        }
+                    }
+                }
             }
 
         }
