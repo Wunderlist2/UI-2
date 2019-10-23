@@ -1,9 +1,7 @@
 .text_shadow {
-  border: 2px solid black;
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 .text_shadow_2 {
-  border: 2px solid black;
   text-shadow: -1px 0 #004BC4, 0 1px #004BC4, 1px 0 #004BC4, 0 -1px #004BC4;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -157,12 +155,10 @@ table {
 }
 .container .content .title:hover {
   color: #E30000;
-  border: 2px solid black;
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 .container .content .active {
   color: #FFFFFF;
-  border: 2px solid black;
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 .container .content h1 {
@@ -185,7 +181,6 @@ table {
 }
 .container .content a:hover {
   color: #FFFFFF;
-  border: 2px solid black;
   text-shadow: -1px 0 #004BC4, 0 1px #004BC4, 1px 0 #004BC4, 0 -1px #004BC4;
 }
 .container .grid_container {
@@ -217,13 +212,12 @@ table {
   height: 3vh;
   background: #000000;
   color: #FFFFFF;
-  border: 1px solid black;
-  border: 2px solid black;
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
   transition: 0.5s;
 }
 .container .grid_container .container_2 .button:hover {
   background: #004BC4;
+  border: 2px solid black;
 }
 .container .main_content {
   width: 100%;
@@ -271,6 +265,9 @@ table {
   padding: 5px;
   width: 15%;
 }
+.container .main_content .content_2 button {
+  border: 2px solid black;
+}
 .container .main_content p {
   font-weight: bold;
   width: 50vw;
@@ -289,7 +286,6 @@ table {
 .container .main_content p button:hover {
   background-color: #004BC4;
   color: #FFFFFF;
-  border: 2px solid black;
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 .container .main_content p button a {
