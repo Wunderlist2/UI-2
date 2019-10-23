@@ -66,6 +66,13 @@ table {
     background-attachment: fixed;
 
     .content{
+        @media @mobile {
+            grid-template-columns: 40% 20% 18% 18%;
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+
         display: grid;
         grid-template-columns: 70% 12% 12% 12%;
         grid-template-rows: 50% auto;
@@ -88,6 +95,10 @@ table {
         }
 
         h1 {
+            @media @mobile {
+                margin-left: 2%;
+                padding-left: 1%;
+            }
             font-size: @font-size;
             color: @text_color;
             text-shadow: 1px 1px;
@@ -113,6 +124,11 @@ table {
         }
     }
     .grid_container {
+        @media @mobile {
+            grid-template-columns: 50% auto;
+            grid-template-rows: 50%;
+            padding-bottom: 6%;
+        }
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
         grid-template-rows: 35vh;
@@ -140,6 +156,10 @@ table {
         }
         
         .button {
+            @media @mobile {
+                width: 60px;
+                height: 30px;
+            }
             .btn(@text_color, @shadow_color);
             .text_shadow();
             transition: 0.5s;
@@ -160,11 +180,18 @@ table {
         justify-items: start;
         
         .content_3 {
+            @media @mobile {
+                padding-left: 2%;
+            }
             padding-left: 10%;
             font-size: @font-size;
             text-align: justify;
 
             h2 {
+                @media @mobile  {
+                    font-size: 30px;
+                    margin-left: 24%;
+                }
                 font-size: 50px;
                 font-weight: bold;
                 margin-left: 26%;
@@ -174,6 +201,7 @@ table {
             p {
                 text-align: center;
             }
+
         }
 
         .content_2 {
@@ -181,7 +209,18 @@ table {
             padding-left: 10%;
             font-size: @font-size;
 
+            .title_2 {
+                @media @mobile {
+                    text-align: right;
+                    margin-left: 20%;
+                }
+            }
+
             h2 {
+                @media @mobile {
+                    font-size: 40px;
+                    margin-left: 12%;
+                }
                 font-size: 50px;
                 font-weight: bold;
                 margin-left: 33%;
@@ -190,6 +229,10 @@ table {
             }
 
             h3 {
+                @media @mobile {
+                    font-size: 30px;
+                    margin-left: 10%;
+                }
                 font-size: 40px;
                 margin-left: 33%;
                 width: 100%;
@@ -205,6 +248,14 @@ table {
             button {
                 border: 2px solid black;
             }
+            p {
+                .content_3 {
+                    @media @mobile {
+                        text-align: justify;
+                    }
+                }
+            }
+            
         }
         p {
             font-weight: bold;
@@ -213,6 +264,10 @@ table {
             padding: 2%;
 
             button {
+                @media @mobile {
+                    margin-top: 5%;
+                    margin-left: 10%;
+                }
                 background-color: @text_color;
                 color: @shadow_color;
                 font-size: 20px;
@@ -229,6 +284,7 @@ table {
                 a {
                     text-decoration: none;
                     color: @shadow_color;
+                    
                 }
             }
         }
