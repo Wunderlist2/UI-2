@@ -1,7 +1,9 @@
 .text_shadow {
+  border: 2px solid black;
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 .text_shadow_2 {
+  border: 2px solid black;
   text-shadow: -1px 0 #004BC4, 0 1px #004BC4, 1px 0 #004BC4, 0 -1px #004BC4;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -142,27 +144,25 @@ table {
 }
 .container .content {
   display: grid;
-  grid-template-columns: 85% 12% 12% 12%;
+  grid-template-columns: 70% 12% 12% 12%;
   grid-template-rows: 50% auto;
   justify-content: right;
   align-items: center;
   padding-top: 1%;
 }
-@media (max-width: 800px) {
-  .container .content {
-    border: 1px solid red;
-  }
-}
 .container .content .title {
   margin-left: 15%;
+  font-size: 20px;
   justify-content: left;
 }
 .container .content .title:hover {
   color: #E30000;
+  border: 2px solid black;
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 .container .content .active {
   color: #FFFFFF;
+  border: 2px solid black;
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 .container .content h1 {
@@ -185,6 +185,7 @@ table {
 }
 .container .content a:hover {
   color: #FFFFFF;
+  border: 2px solid black;
   text-shadow: -1px 0 #004BC4, 0 1px #004BC4, 1px 0 #004BC4, 0 -1px #004BC4;
 }
 .container .grid_container {
@@ -216,6 +217,8 @@ table {
   height: 3vh;
   background: #000000;
   color: #FFFFFF;
+  border: 1px solid black;
+  border: 2px solid black;
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
   transition: 0.5s;
 }
@@ -286,6 +289,7 @@ table {
 .container .main_content p button:hover {
   background-color: #004BC4;
   color: #FFFFFF;
+  border: 2px solid black;
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 .container .main_content p button a {

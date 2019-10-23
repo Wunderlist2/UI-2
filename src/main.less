@@ -67,18 +67,15 @@ table {
 
     .content{
         display: grid;
-        grid-template-columns: 85% 12% 12% 12%;
+        grid-template-columns: 70% 12% 12% 12%;
         grid-template-rows: 50% auto;
         justify-content: right;
         align-items: center;
         padding-top: 1%;
-        
-        @media @tablet {
-            border: 1px solid red;
-        }
 
         .title {
             margin-left: 15%;
+            font-size: @font-size;
             justify-content: left;
             &:hover {
                 color: @red_color;
