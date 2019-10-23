@@ -232,9 +232,9 @@ table {
   border: 0px;
 }
 .container .grid_container .container_2 .button {
-  font-size: 80%;
+  font-size: 100%;
   width: 20%;
-  height: 3vh;
+  height: 5vh;
   background: #000000;
   color: #FFFFFF;
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
@@ -265,6 +265,25 @@ table {
   .container .main_content .content_3 {
     padding-left: 2%;
   }
+}
+.container .main_content .content_3 button {
+  font-size: 100%;
+  width: 20%;
+  height: 5vh;
+  background: #000000;
+  color: #FFFFFF;
+  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+  transition: 0.5s;
+}
+@media (max-width: 500px) {
+  .container .main_content .content_3 button {
+    width: 60px;
+    height: 30px;
+  }
+}
+.container .main_content .content_3 button:hover {
+  background: #004BC4;
+  border: 3px solid black;
 }
 .container .main_content .content_3 h2 {
   font-size: 50px;
@@ -324,9 +343,6 @@ table {
   border-radius: 4px;
   padding: 5px;
   width: 15%;
-}
-.container .main_content .content_2 button {
-  border: 2px solid black;
 }
 @media (max-width: 500px) {
   .container .main_content .content_2 p .content_3 {
