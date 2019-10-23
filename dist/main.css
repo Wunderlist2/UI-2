@@ -305,6 +305,10 @@ table {
 .container .main_content .content_3 p {
   text-align: center;
 }
+.container .main_content .content_3 p a img {
+  height: 50px;
+  width: 50px;
+}
 @media (max-width: 500px) {
   .container .main_content .content_3 p a img {
     margin-top: 5%;
