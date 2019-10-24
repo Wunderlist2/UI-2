@@ -197,7 +197,6 @@ table {
 .container .grid_container {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 35vh;
   text-align: center;
   justify-content: space-evenly;
 }
