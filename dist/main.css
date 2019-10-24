@@ -209,6 +209,7 @@ table {
 }
 .container .grid_container .container_2 {
   grid-row-gap: 2%;
+  padding-bottom: 4%;
 }
 @media (max-width: 500px) {
   .container .grid_container .container_2 {
