@@ -302,6 +302,13 @@ table {
     margin-left: 6%;
   }
 }
+@media (min-width: 736px) and (max-width: 736px) {
+  .container .main_content .content_3 button {
+    width: 90%;
+    margin-top: 20%;
+    margin-left: 10%;
+  }
+}
 .container .main_content .content_3 button:hover {
   background: #004BC4;
   border: 3px solid #000000;
