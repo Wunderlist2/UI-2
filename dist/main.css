@@ -209,7 +209,12 @@ table {
   .container .grid_container {
     grid-template-columns: 50% auto;
     grid-template-rows: 50%;
-    padding-bottom: 6%;
+  }
+}
+@media (max-width: 800px) {
+  .container .grid_container {
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 50% auto;
   }
 }
 .container .grid_container .container_2 {
