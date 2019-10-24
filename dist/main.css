@@ -179,6 +179,11 @@ table {
     margin-left: 2%;
   }
 }
+@media (max-width: 800px) {
+  .container .content h1 {
+    margin-left: 10%;
+  }
+}
 .container .content nav {
   font-size: 100%;
   margin: 0.15%;
@@ -204,11 +209,17 @@ table {
   .container .grid_container {
     grid-template-columns: 50% auto;
     grid-template-rows: 50%;
-    padding-bottom: 6%;
+  }
+}
+@media (max-width: 800px) {
+  .container .grid_container {
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 50% auto;
   }
 }
 .container .grid_container .container_2 {
   grid-row-gap: 2%;
+  padding-bottom: 4%;
 }
 @media (max-width: 500px) {
   .container .grid_container .container_2 {
@@ -254,8 +265,8 @@ table {
   border: 2px solid black;
 }
 .container .main_content {
-  width: 100%;
   display: grid;
+  width: 100%;
   grid-template-rows: 30% 30% 30%;
   justify-items: start;
 }
@@ -284,6 +295,13 @@ table {
     margin-top: 20%;
   }
 }
+@media (max-width: 800px) {
+  .container .main_content .content_3 button {
+    width: 90%;
+    margin-top: 20%;
+    margin-left: 6%;
+  }
+}
 .container .main_content .content_3 button:hover {
   background: #004BC4;
   border: 3px solid #000000;
@@ -299,6 +317,12 @@ table {
   .container .main_content .content_3 h2 {
     font-size: 30px;
     margin-left: 24%;
+  }
+}
+@media (max-width: 800px) {
+  .container .main_content .content_3 h2 {
+    font-size: 40px;
+    margin-left: 20%;
   }
 }
 .container .main_content .content_3 p {
@@ -321,6 +345,11 @@ table {
   padding-left: 10%;
   font-size: 100%;
 }
+@media (max-width: 800px) {
+  .container .main_content .content_2 {
+    justify-content: center;
+  }
+}
 @media (max-width: 500px) {
   .container .main_content .content_2 .title_2 {
     text-align: right;
@@ -340,6 +369,11 @@ table {
     margin-left: 12%;
   }
 }
+@media (max-width: 800px) {
+  .container .main_content .content_2 h2 {
+    font-size: 40px;
+  }
+}
 .container .main_content .content_2 h3 {
   font-size: 40px;
   margin-left: 33%;
@@ -350,7 +384,11 @@ table {
 @media (max-width: 500px) {
   .container .main_content .content_2 h3 {
     font-size: 30px;
-    margin-left: 10%;
+  }
+}
+@media (max-width: 800px) {
+  .container .main_content .content_2 h3 {
+    font-size: 30px;
   }
 }
 .container .main_content .content_2 img {

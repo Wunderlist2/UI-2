@@ -48,6 +48,10 @@
             @media @mobile {
                 margin-left: 2%;
             }
+
+            @media @tablet {
+                margin-left: 10%;
+            }
             font-size: @font-size;
             color: @text_color;
             margin-left: 40%;
@@ -75,11 +79,16 @@
         @media @mobile {
             grid-template-columns: 50% auto;
             grid-template-rows: 50%;
-            padding-bottom: 6%;
         }
+
+        @media @tablet {
+            grid-template-columns: 30% 30% 30%;
+            grid-template-rows: 50% auto;
+
+        }
+
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
-        //grid-template-rows: 35vh;
         text-align: center;
         justify-content: space-evenly;
         
@@ -88,7 +97,9 @@
             padding-bottom: 5%;
             align-items: center;
         }
+
         grid-row-gap: 2%;
+        padding-bottom: 4%;
 
         img {
             border: 2px solid @text_color;
@@ -132,7 +143,6 @@
     .main_content {
         display: grid;
         width: 100%;
-        display: grid;
         grid-template-rows: 30% 30% 30%;
         justify-items: start;
         
@@ -140,6 +150,7 @@
             @media @mobile {
                 padding-left: 2%;
             }
+
             padding-left: 10%;
             font-size: @font-size;
             text-align: justify;
@@ -148,6 +159,11 @@
                 @media @mobile {
                     width: 80%;
                     margin-top: 20%;
+                }
+                @media @tablet {
+                    width: 90%;
+                    margin-top: 20%;
+                    margin-left: 6%;
                 }
                 .btn(@text_color, @shadow_color);
                 .text_shadow();
@@ -163,6 +179,13 @@
                     font-size: 30px;
                     margin-left: 24%;
                 }
+
+                
+                @media @tablet {
+                    font-size: 40px;
+                    margin-left: 20%;
+                }
+
                 font-size: 50px;
                 font-weight: bold;
                 margin-left: 26%;
@@ -196,6 +219,9 @@
             padding-left: 10%;
             font-size: @font-size;
 
+            @media @tablet {
+                justify-content: center;
+            }
             .title_2 {
                 @media @mobile {
                     text-align: right;
@@ -208,6 +234,11 @@
                     font-size: 40px;
                     margin-left: 12%;
                 }
+
+                @media @tablet {
+                    font-size: 40px;
+                }
+
                 font-size: 50px;
                 font-weight: bold;
                 margin-left: 33%;
@@ -218,7 +249,10 @@
             h3 {
                 @media @mobile {
                     font-size: 30px;
-                    margin-left: 10%;
+                    
+                }
+                @media @tablet {
+                    font-size: 30px;
                 }
                 font-size: 40px;
                 margin-left: 33%;
