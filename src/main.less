@@ -45,13 +45,14 @@
         }
 
         h1 {
+            @media @tablet {
+                margin-left: 10%;
+            }
             @media @mobile {
                 margin-left: 2%;
             }
 
-            @media @tablet {
-                margin-left: 10%;
-            }
+
             font-size: @font-size;
             color: @text_color;
             margin-left: 40%;
@@ -76,17 +77,15 @@
         }
     }
     .grid_container {
-        @media @mobile {
-            grid-template-columns: 50% auto;
-            grid-template-rows: 50%;
-        }
-
         @media @tablet {
             grid-template-columns: 30% 30% 30%;
             grid-template-rows: 50% auto;
 
         }
-
+        @media @mobile {
+            grid-template-columns: 50% auto;
+            grid-template-rows: 50%;
+        }
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
         text-align: center;
@@ -94,7 +93,8 @@
         
     .container_2 {
         @media @mobile {
-            padding-bottom: 5%;
+            margin-bottom: 10%;
+            padding-bottom: 6%;
             align-items: center;
         }
 
@@ -156,21 +156,16 @@
             text-align: justify;
             
             button {
-                @media @mobile {
-                    width: 80%;
-                    margin-top: 20%;
-                }
                 @media @tablet {
                     width: 90%;
                     margin-top: 20%;
                     margin-left: 6%;
                 }
-
-                @media @iphone {
+                @media @mobile {
                     width: 90%;
                     margin-top: 20%;
-                    margin-left: 6%;
                 }
+
                 .btn(@text_color, @shadow_color);
                 .text_shadow();
                 transition: 0.5s;
@@ -181,16 +176,17 @@
             }
 
             h2 {
-                @media @mobile  {
-                    font-size: 30px;
-                    margin-left: 24%;
-                }
-
-                
                 @media @tablet {
                     font-size: 40px;
                     margin-left: 20%;
                 }
+
+                @media @mobile  {
+                    font-size: 30px;
+                    margin-left: 21%;
+                    margin-bottom: 5%;
+                }
+                
 
                 font-size: 50px;
                 font-weight: bold;
@@ -236,14 +232,15 @@
             }
 
             h2 {
+                
+                @media @tablet {
+                    font-size: 40px;
+                }
                 @media @mobile {
                     font-size: 40px;
                     margin-left: 12%;
                 }
 
-                @media @tablet {
-                    font-size: 40px;
-                }
 
                 font-size: 50px;
                 font-weight: bold;
@@ -253,13 +250,14 @@
             }
 
             h3 {
-                @media @mobile {
-                    font-size: 30px;
-                    
-                }
                 @media @tablet {
                     font-size: 30px;
                 }
+                @media @mobile {
+                    font-size: 30px;
+                    margin-left: 15%;
+                }
+
                 font-size: 40px;
                 margin-left: 33%;
                 width: 100%;
