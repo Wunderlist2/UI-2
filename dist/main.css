@@ -179,7 +179,7 @@ table {
     margin-left: 2%;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 815px) {
   .container .content h1 {
     margin-left: 10%;
   }
@@ -211,7 +211,7 @@ table {
     grid-template-rows: 50%;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 815px) {
   .container .grid_container {
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: 50% auto;
@@ -295,7 +295,7 @@ table {
     margin-top: 20%;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 815px) {
   .container .main_content .content_3 button {
     width: 90%;
     margin-top: 20%;
@@ -319,7 +319,7 @@ table {
     margin-left: 24%;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 815px) {
   .container .main_content .content_3 h2 {
     font-size: 40px;
     margin-left: 20%;
@@ -345,7 +345,7 @@ table {
   padding-left: 10%;
   font-size: 100%;
 }
-@media (max-width: 800px) {
+@media (max-width: 815px) {
   .container .main_content .content_2 {
     justify-content: center;
   }
@@ -369,7 +369,7 @@ table {
     margin-left: 12%;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 815px) {
   .container .main_content .content_2 h2 {
     font-size: 40px;
   }
@@ -386,7 +386,7 @@ table {
     font-size: 30px;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 815px) {
   .container .main_content .content_2 h3 {
     font-size: 30px;
   }
