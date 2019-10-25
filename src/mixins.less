@@ -1,2 +1,24 @@
+// Mixins for text Shadow effects
+.text_shadow {
+    text-shadow: -1px 0 @text_color, 0 1px @text_color, 1px 0 @text_color, 0 -1px @text_color;
+} 
+.text_shadow_2 {
+    text-shadow: -1px 0 @blue_color, 0 1px @blue_color, 1px 0 @blue_color, 0 -1px @blue_color;
+}
+
+// parametric mixin
+.btn(@background-color, @text-color) {
+    background: @background-color;
+    color: @text-color;
+    font-size: @font-size;
+    width: 20%;
+    height: 5vh;
+    background: @text_color;
+    color: @shadow_color;
+   
+}
 
 
+// Escape media queries
+@tablet: ~"(max-width: 815px)";
+@mobile: ~"(max-width: 500px)";

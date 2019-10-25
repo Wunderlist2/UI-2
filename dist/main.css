@@ -1,3 +1,9 @@
+.text_shadow {
+  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+}
+.text_shadow_2 {
+  text-shadow: -1px 0 #004BC4, 0 1px #004BC4, 1px 0 #004BC4, 0 -1px #004BC4;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -131,96 +137,179 @@ table {
   height: 100vh;
   width: 100%;
   background: url("../img/WunderListBG.png") no-repeat center center;
+  background-size: cover;
   background-attachment: fixed;
 }
 .container .content {
+  width: 100%;
   display: grid;
-  grid-template-columns: 20% 40%;
-  grid-template-rows: 10% auto;
-  grid-gap: 10%;
-  justify-content: space-between;
-  align-items: center;
+  grid-template-columns: 4.5fr 1fr 1fr 1fr;
+  grid-template-rows: 10vh auto;
+  gap: 1%;
+  align-items: start;
+  padding-top: 2%;
 }
-.container .content .active {
-  color: #FFFFFF;
-  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
-}
-.container .content h1 {
-  font-size: 20px;
-  color: #000000;
-  text-shadow: 1px 1px;
-  margin-left: 40%;
-  padding: 2%;
-}
-.container .content nav {
-  font-size: 20px;
-  margin: 0.15%;
-  font-weight: bold;
+@media (max-width: 500px) {
+  .container .content {
+    grid-template-columns: 2.5fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh auto;
+  }
 }
 .container .content a {
-  margin-left: 15%;
+  font-weight: bold;
   text-decoration: none;
   color: #000000;
+  transition: 0.5s;
 }
 .container .content a:hover {
   color: #FFFFFF;
-  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+  text-shadow: -1px 0 #004BC4, 0 1px #004BC4, 1px 0 #004BC4, 0 -1px #004BC4;
 }
-.container .main_content {
-  width: 100%;
-  display: grid;
-  grid-template-rows: 30% 30% 30%;
-  justify-items: start;
-}
-.container .main_content .content_2 {
-  padding-top: 15%;
-  padding-left: 10%;
-  font-size: 20px;
-}
-.container .main_content .content_2 h2 {
-  font-size: 50px;
-  font-weight: bold;
-  margin-left: 26%;
-  text-align: center;
-  width: 100%;
-}
-.container .main_content .content_2 h3 {
-  font-size: 40px;
-  margin-left: 26%;
-  width: 100%;
-  font-weight: 100;
-  text-align: center;
-}
-.container .main_content p {
-  font-weight: bold;
-  width: 50vw;
-  margin-left: 25%;
-  padding: 2%;
-}
-.container .main_content p button {
-  background-color: #000000;
+.container .content .active {
   color: #FFFFFF;
-  font-size: 20px;
-  padding: 1%;
-  width: 200px;
-  border-radius: 10px;
+  text-shadow: -1px 0 #004BC4, 0 1px #004BC4, 1px 0 #004BC4, 0 -1px #004BC4;
+}
+.container .content .about_us {
+  grid-column: 0.66666667;
+  text-align: right;
+}
+.container .content .contact_us {
+  grid-column: 0.75;
+  text-align: center;
+}
+.container .content .sign_in {
+  grid-column: 0.8;
+}
+.container .content h1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  font-size: 1em;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+}
+.container .content h1 a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
   transition: 0.5s;
 }
-.container .main_content p button:hover {
-  background-color: #606060;
-  color: #FFFFFF;
+.container .content h1 a:hover {
+  color: #E30000;
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
-.container .main_content p button a {
-  text-decoration: none;
+.container .content h1 nav {
+  font-size: 1em;
+}
+.container .main_content .content_2 {
+  width: 100%;
+  font-size: 1em;
+}
+.container .main_content .content_2 h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .container .main_content .content_2 h2 {
+    font-size: 1.5em;
+  }
+}
+.container .main_content .content_2 h3 {
+  font-size: 2em;
+  width: 100%;
+  text-align: center;
+}
+.container .main_content .content_2 p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-weight: bold;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .container .main_content .content_2 p {
+    text-align: justify;
+  }
+}
+.container .main_content .content_2 p button {
+  font-size: 1em;
+  width: 20%;
+  height: 5vh;
+  background: #000000;
   color: #FFFFFF;
+  text-align: center;
+  border-radius: 10px;
+  width: 25em;
+  transition: 0.5s;
+}
+@media (max-width: 500px) {
+  .container .main_content .content_2 p button {
+    width: 15em;
+  }
+}
+.container .main_content .content_2 p button:hover {
+  background-color: #004BC4;
+  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+  border: 2px solid #000000;
+}
+.container .main_content .content_2 p a {
+  padding: 2%;
+}
+.container .main_content .content_2 p a .icon {
+  width: 3.125em;
+}
+.container .grid_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+  grid-template-rows: auto;
+  gap: 1% 1%;
+  padding-top: 2%;
+}
+@media (max-width: 500px) {
+  .container .grid_container {
+    grid-template-columns: 3fr 3fr;
+  }
+}
+.container .grid_container .container_2 {
+  width: 100%;
+  text-align: center;
+  padding-top: 2%;
+}
+@media (max-width: 500px) {
+  .container .grid_container .container_2 {
+    border: 1px solid purple;
+  }
+}
+.container .grid_container .container_2 img {
+  width: 30%;
+  border: 2px solid #000000;
+}
+.container .grid_container .container_2 p {
+  line-height: 1.5;
+}
+.container .grid_container .container_2 p .icon {
+  width: 3.125em;
+  border: 0px;
+}
+.container .grid_container .container_2 a {
+  text-decoration: none;
+  color: #000000;
+}
+.container .grid_container .container_2 h2 {
+  font-size: 1em;
 }
 .footer {
-  background: black;
-  width: 98.8vw;
-  height: 3vh;
+  position: fixed;
+  bottom: 0;
+  background: #000000;
+  width: 100%;
+  height: 2.5vh;
   text-align: center;
-  padding-top: 1%;
-  font-size: 10px;
+  font-size: 0.75em;
+  padding-top: 0.5%;
   color: #FFFFFF;
 }
