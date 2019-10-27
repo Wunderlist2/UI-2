@@ -11,7 +11,7 @@
     background: url("../img/WunderListBG.png")  no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
-    
+
     .content{
         @media @mobile {
             grid-template-columns: 2.5fr 1fr 1fr 1fr;
@@ -22,10 +22,10 @@
         grid-template-columns: 4.5fr 1fr 1fr 1fr;
         grid-template-rows: 10vh auto;
         gap: 1%;
-        //border: 1px solid purple;
+        border: 1px solid purple;
         align-items: start;
         padding-top: 2%;
-        
+     
         // grid menu + links
         a {
             font-weight: bold;
@@ -91,7 +91,7 @@
     }
 
     .main_content {
-        
+
         .content_2 {
             
             width: 100%;
@@ -155,12 +155,10 @@
 .grid_container {
     @media @tablet {
         grid-template-columns: 30% 30% 30%;
-        //grid-template-rows: 50% auto;
-
     }
     @media @mobile {
         grid-template-columns: 50% auto;
-        //grid-template-rows: 50% auto;
+        grid-template-rows: 33%;
     }
     display: grid;
     grid-template-columns: 3fr 3fr 3fr 3fr;
@@ -174,10 +172,8 @@
     }
 
     img {
-        //width: 100%;
         border: 2px solid @text_color;
-        width: 30%;
-        
+        width: 40%;
     }
     
     a {
@@ -195,7 +191,6 @@
             .icon();
             border: 0px;
         }
-        
     }
 }
 }
