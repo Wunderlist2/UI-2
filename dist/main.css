@@ -200,6 +200,11 @@ table {
   font-weight: bold;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .container .content h1 {
+    font-size: 1rem;
+  }
+}
 .container .content h1 a {
   font-weight: bold;
   text-decoration: none;
@@ -222,11 +227,11 @@ table {
 }
 @media (max-width: 500px) {
   .container .main_content .content_2 h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 .container .main_content .content_2 h3 {
-  font-size: 2.5em;
+  font-size: 2.25rem;
   width: 100%;
   text-align: center;
 }
@@ -238,6 +243,11 @@ table {
   margin: 0 auto;
   font-weight: bold;
   width: 50%;
+}
+@media (max-width: 815px) {
+  .container .main_content .content_2 p {
+    font-size: 1.5rem;
+  }
 }
 @media (max-width: 500px) {
   .container .main_content .content_2 p {
@@ -256,6 +266,11 @@ table {
   border-radius: 10px;
   width: 25em;
   transition: 0.5s;
+}
+@media (max-width: 815px) {
+  .container .main_content .content_2 p button {
+    width: 18em;
+  }
 }
 @media (max-width: 500px) {
   .container .main_content .content_2 p button {
