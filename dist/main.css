@@ -159,7 +159,6 @@ table {
   grid-template-columns: 4.5fr 1fr 1fr 1fr;
   grid-template-rows: 10vh auto;
   gap: 1%;
-  border: 1px solid purple;
   align-items: start;
   padding-top: 2%;
 }
@@ -197,7 +196,6 @@ table {
 .container .content h1 {
   grid-column-start: 1;
   grid-column-end: 2;
-  font-size: 1rem;
   color: #000000;
   font-weight: bold;
   text-align: center;
@@ -213,29 +211,30 @@ table {
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 .container .content h1 nav {
-  font-size: 1rem;
+  font-size: 62.5%;
 }
 .container .main_content .content_2 {
   width: 100%;
-  font-size: 1rem;
+  font-size: 62.5%;
 }
 .container .main_content .content_2 h2 {
-  font-size: 2.5em;
+  font-size: 3rem;
   font-weight: bold;
   text-align: center;
   width: 100%;
 }
 @media (max-width: 500px) {
   .container .main_content .content_2 h2 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 }
 .container .main_content .content_2 h3 {
-  font-size: 2em;
+  font-size: 2.5em;
   width: 100%;
   text-align: center;
 }
 .container .main_content .content_2 p {
+  font-size: 2em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,11 +248,12 @@ table {
   }
 }
 .container .main_content .content_2 p button {
-  font-size: 1rem;
+  font-size: 62.5%;
   width: 20%;
   height: 5vh;
   background: #000000;
   color: #FFFFFF;
+  font-size: 1em;
   text-align: center;
   border-radius: 10px;
   width: 25em;
@@ -307,7 +307,7 @@ table {
   color: #000000;
 }
 .container .grid_container .container_2 h2 {
-  font-size: 1rem;
+  font-size: 1em;
 }
 .container .grid_container .container_2 p {
   line-height: 1.5;
