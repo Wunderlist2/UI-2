@@ -210,9 +210,6 @@ table {
   color: #E30000;
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
-.container .content h1 nav {
-  font-size: 62.5%;
-}
 .container .main_content .content_2 {
   width: 100%;
   font-size: 62.5%;
@@ -245,6 +242,7 @@ table {
 @media (max-width: 500px) {
   .container .main_content .content_2 p {
     text-align: justify;
+    font-size: 1.5rem;
   }
 }
 .container .main_content .content_2 p button {
@@ -261,7 +259,7 @@ table {
 }
 @media (max-width: 500px) {
   .container .main_content .content_2 p button {
-    width: 15em;
+    width: 10em;
   }
 }
 .container .main_content .content_2 p button:hover {
