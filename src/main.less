@@ -65,13 +65,17 @@
 
         // grid header/title
         h1 {
+            @media @mobile {
+                font-size: 1rem;
+
+            }
             grid-column-start: 1;
             grid-column-end: 2;
             color: @text_color;
             font-weight: bold;
             text-align: center;
 
-            a {
+            a{
                 font-weight: bold;
                 text-decoration: none;
                 color: @text_color;
@@ -93,7 +97,7 @@
 
             h2 {
                 @media @mobile {
-                    font-size: 1.5rem;
+                    font-size: 2rem;
                 }
                 font-size: 3rem;
                 font-weight: bold;
@@ -103,7 +107,7 @@
 
             h3 {
                 
-                font-size: 2.5em;
+                font-size: 2.25rem;
                 width: 100%;
                 text-align: center;
             }
@@ -111,6 +115,9 @@
 
        
         p {
+            @media @tablet {
+                font-size: 1.5rem;
+            }
             @media @mobile {
                 text-align: justify;
                 font-size: 1.5rem;
@@ -124,6 +131,9 @@
             width: 50%;
         
             button {
+                @media @tablet {
+                    width: 18em;
+                }
                 @media @mobile {
                     width: 10em;
                 }
